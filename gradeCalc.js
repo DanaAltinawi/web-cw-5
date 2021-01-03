@@ -1,11 +1,10 @@
 function submit() {
-let Quizes= document.getElementById("Quizes").value
-let Midterm= document.getElementById("Midterm").value
-let FinalTest= document.getElementById("FinalTest").value
-let Oral= document.getElementById("Oral").value
+let Quizes= parseInt(document.getElementById("Quizes").value)
+let Midterm= parseInt(document.getElementById("Midterm").value)
+let FinalTest= parseInt(document.getElementById("FinalTest").value)
+let Oral= parseInt(document.getElementById("Oral").value)
 
-var total= Quizes + Midterm + FinalTest + Oral
-document.getElementById("total_grades").value= total
+let total= parseInt(Quizes + Midterm + FinalTest + Oral)
 
 // 2. :تقوم الآلة الحاسبة بإجراء الحسابات اللازمة لحساب مجموع درجاتك بحيث
 
