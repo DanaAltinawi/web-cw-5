@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <script src="./gradeCalc.js"></script>
     <!-- السؤال الثالث -->
 
     <!-- 🤔 مفاهيم أساسية -->
@@ -45,13 +46,16 @@
       <input id="Midterm" type="text" />
       <input id="FinalTest" type="text" />
       <input id="Oral" type="text" />
+      
 
       <input
         id="submitButton"
         type="button"
         value="calculate"
-        onClick="submit()"
+        onclick="submit()"
       />
+      
+      <!-- <button onclick="getBMI();">احسب</button> -->
 
       <p>مجموع درجاتك (بالأرقام) هو</p>
       <div id="total_grades"></div>
